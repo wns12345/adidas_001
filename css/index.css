@@ -1,0 +1,61 @@
+/* 공통 사항 */
+
+* { margin:0; padding:0; box-sizing: border-box;}
+
+main { width: 100%; height: auto;}
+.main_wrap { width: 100%; height: auto; text-align: center;}
+
+.main_img_1920 { display:block; margin: 0 auto;}
+.main_img_1440 { width: 100%; display:none;}
+.main_img_1024 { width: 100%; display:none;}
+.main_img_768 { width: 100%; display:none;}
+.main_img_640 { width: 100%; display:none;}
+.main_img_360 { width: 100%; display:none;}
+
+/* Media Query */
+
+@media screen and (max-width:1440px) {
+
+   .main_img_1920 { display:none;}
+   .main_img_1440 { display:block;}
+   
+}
+
+@media screen and (max-width:1024px) {
+
+   .main_img_1920 { display:none;}
+   .main_img_1440 { display:none;}
+   .main_img_1024 { display:block;}
+   
+
+}
+
+@media screen and (max-width:768px) {
+   .main_img_1920 { display:none;}
+   .main_img_1440 { display:none;}
+   .main_img_1024 { display:none;}
+   .main_img_768 { display:block;}
+
+   
+}
+
+@media screen and (max-width:640px) {
+
+   .main_img_1920 { display:none;}
+   .main_img_1440 { display:none;}
+   .main_img_1024 { display:none;}
+   .main_img_768 { display:none;}
+   .main_img_640 { display:block;}
+   
+}
+
+@media screen and (max-width:479px) {
+
+   .main_img_1920 { display:none;}
+   .main_img_1440 { display:none;}
+   .main_img_1024 { display:none;}
+   .main_img_768 { display:none;}
+   .main_img_640 { display:none;}
+   .main_img_360 { display:block;}
+
+}
